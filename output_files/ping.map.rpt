@@ -1,0 +1,626 @@
+Analysis & Synthesis report for ping
+Sat Jan  4 11:38:56 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Parameter Settings for User Entity Instance: Top-level Entity: |toplevel
+ 12. Parameter Settings for User Entity Instance: prescale:myScale
+ 13. Parameter Settings for User Entity Instance: prescalerEcho:mytickEcho
+ 14. Parameter Settings for User Entity Instance: countPing:mtTrig
+ 15. Parameter Settings for User Entity Instance: echoCount:myEcho
+ 16. Parameter Settings for User Entity Instance: shiftadd:myshift
+ 17. Parameter Settings for User Entity Instance: bcdto7seg:mybcdone
+ 18. Parameter Settings for User Entity Instance: bcdto7seg:mybcdten
+ 19. Parameter Settings for User Entity Instance: bcdto7seg:mybcdhundred
+ 20. Parameter Settings for User Entity Instance: bcdto7seg:mybcdthausand
+ 21. Parameter Settings for User Entity Instance: buzzer:mybuzz
+ 22. Port Connectivity Checks: "shiftadd:myshift|add3:m12"
+ 23. Port Connectivity Checks: "shiftadd:myshift|add3:m8"
+ 24. Port Connectivity Checks: "shiftadd:myshift|add3:m1"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Sat Jan  4 11:38:56 2020       ;
+; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                   ; ping                                        ;
+; Top-level Entity Name           ; toplevel                                    ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 70                                          ;
+; Total pins                      ; 33                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
+; Top-level entity name                                                           ; toplevel           ; ping               ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; countPing.v                      ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v     ;         ;
+; prescale.v                       ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v      ;         ;
+; bcdto7seg.v                      ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v     ;         ;
+; shiftadd.v                       ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v      ;         ;
+; echoCount.v                      ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v     ;         ;
+; toplevel.v                       ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v      ;         ;
+; add3.v                           ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v          ;         ;
+; prescalerEcho.v                  ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v ;         ;
+; buzzer.v                         ; yes             ; User Verilog HDL File  ; /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v        ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                             ;
++---------------------------------------------+---------------------------+
+; Resource                                    ; Usage                     ;
++---------------------------------------------+---------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 77                        ;
+;                                             ;                           ;
+; Combinational ALUT usage for logic          ; 147                       ;
+;     -- 7 input functions                    ; 0                         ;
+;     -- 6 input functions                    ; 5                         ;
+;     -- 5 input functions                    ; 5                         ;
+;     -- 4 input functions                    ; 59                        ;
+;     -- <=3 input functions                  ; 78                        ;
+;                                             ;                           ;
+; Dedicated logic registers                   ; 70                        ;
+;                                             ;                           ;
+; I/O pins                                    ; 33                        ;
+;                                             ;                           ;
+; Total DSP Blocks                            ; 0                         ;
+;                                             ;                           ;
+; Maximum fan-out node                        ; prescale:myScale|count[8] ;
+; Maximum fan-out                             ; 29                        ;
+; Total fan-out                               ; 686                       ;
+; Average fan-out                             ; 2.42                      ;
++---------------------------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name   ; Library Name ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
+; |toplevel                     ; 147 (0)             ; 70 (0)                    ; 0                 ; 0          ; 33   ; 0            ; |toplevel                           ; toplevel      ; work         ;
+;    |bcdto7seg:mybcdhundred|   ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|bcdto7seg:mybcdhundred    ; bcdto7seg     ; work         ;
+;    |bcdto7seg:mybcdone|       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|bcdto7seg:mybcdone        ; bcdto7seg     ; work         ;
+;    |bcdto7seg:mybcdten|       ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|bcdto7seg:mybcdten        ; bcdto7seg     ; work         ;
+;    |buzzer:mybuzz|            ; 19 (19)             ; 18 (18)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel|buzzer:mybuzz             ; buzzer        ; work         ;
+;    |countPing:mtTrig|         ; 16 (16)             ; 14 (14)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel|countPing:mtTrig          ; countPing     ; work         ;
+;    |echoCount:myEcho|         ; 19 (19)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |toplevel|echoCount:myEcho          ; echoCount     ; work         ;
+;    |prescale:myScale|         ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|prescale:myScale          ; prescale      ; work         ;
+;    |prescalerEcho:mytickEcho| ; 8 (8)               ; 8 (8)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|prescalerEcho:mytickEcho  ; prescalerEcho ; work         ;
+;    |shiftadd:myshift|         ; 40 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift          ; shiftadd      ; work         ;
+;       |add3:m10|              ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m10 ; add3          ; work         ;
+;       |add3:m11|              ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m11 ; add3          ; work         ;
+;       |add3:m12|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m12 ; add3          ; work         ;
+;       |add3:m1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m1  ; add3          ; work         ;
+;       |add3:m2|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m2  ; add3          ; work         ;
+;       |add3:m3|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m3  ; add3          ; work         ;
+;       |add3:m4|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m4  ; add3          ; work         ;
+;       |add3:m5|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m5  ; add3          ; work         ;
+;       |add3:m6|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m6  ; add3          ; work         ;
+;       |add3:m7|               ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m7  ; add3          ; work         ;
+;       |add3:m8|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m8  ; add3          ; work         ;
+;       |add3:m9|               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |toplevel|shiftadd:myshift|add3:m9  ; add3          ; work         ;
++-------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal         ; Free of Timing Hazards ;
++-----------------------------------------------------+-----------------------------+------------------------+
+; bcdto7seg:mybcdone|out[0]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdone|out[1]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdone|out[2]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdone|out[3]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdone|out[4]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdone|out[5]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdone|out[6]                           ; bcdto7seg:mybcdone|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[0]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[1]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[2]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[3]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[4]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[5]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdten|out[6]                           ; bcdto7seg:mybcdten|Mux7     ; yes                    ;
+; bcdto7seg:mybcdhundred|out[0]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; bcdto7seg:mybcdhundred|out[1]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; bcdto7seg:mybcdhundred|out[2]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; bcdto7seg:mybcdhundred|out[3]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; bcdto7seg:mybcdhundred|out[4]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; bcdto7seg:mybcdhundred|out[5]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; bcdto7seg:mybcdhundred|out[6]                       ; bcdto7seg:mybcdhundred|Mux7 ; yes                    ;
+; Number of user-specified and inferred latches = 21  ;                             ;                        ;
++-----------------------------------------------------+-----------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++---------------------------------------+-----------------------------------------------+
+; Register name                         ; Reason for Removal                            ;
++---------------------------------------+-----------------------------------------------+
+; prescale:myScale|count[0]             ; Merged with prescalerEcho:mytickEcho|count[0] ;
+; Total Number of Removed Registers = 1 ;                                               ;
++---------------------------------------+-----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 70    ;
+; Number of registers using Synchronous Clear  ; 24    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |toplevel ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; bit7           ; 7     ; Signed Integer                                  ;
+; bit10          ; 10    ; Signed Integer                                  ;
+; bit4           ; 4     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: prescale:myScale ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; bitScale       ; 9     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: prescalerEcho:mytickEcho ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; bitScale       ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: countPing:mtTrig ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; bitSize        ; 13    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: echoCount:myEcho ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; bitSize        ; 10    ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shiftadd:myshift ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; bitIn          ; 10    ; Signed Integer                       ;
+; bitOut         ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcdto7seg:mybcdone ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; bitIn          ; 4     ; Signed Integer                         ;
+; bitOut         ; 7     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcdto7seg:mybcdten ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; bitIn          ; 4     ; Signed Integer                         ;
+; bitOut         ; 7     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcdto7seg:mybcdhundred ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; bitIn          ; 4     ; Signed Integer                             ;
+; bitOut         ; 7     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bcdto7seg:mybcdthausand ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; bitIn          ; 4     ; Signed Integer                              ;
+; bitOut         ; 7     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: buzzer:mybuzz ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; bitScaler1     ; 14    ; Signed Integer                    ;
+; bitScaler2     ; 2     ; Signed Integer                    ;
+; bitScaler3     ; 2     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------+
+; Port Connectivity Checks: "shiftadd:myshift|add3:m12" ;
++-------+-------+----------+----------------------------+
+; Port  ; Type  ; Severity ; Details                    ;
++-------+-------+----------+----------------------------+
+; in[3] ; Input ; Info     ; Stuck at GND               ;
++-------+-------+----------+----------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "shiftadd:myshift|add3:m8" ;
++-------+-------+----------+---------------------------+
+; Port  ; Type  ; Severity ; Details                   ;
++-------+-------+----------+---------------------------+
+; in[3] ; Input ; Info     ; Stuck at GND              ;
++-------+-------+----------+---------------------------+
+
+
++------------------------------------------------------+
+; Port Connectivity Checks: "shiftadd:myshift|add3:m1" ;
++-------+-------+----------+---------------------------+
+; Port  ; Type  ; Severity ; Details                   ;
++-------+-------+----------+---------------------------+
+; in[3] ; Input ; Info     ; Stuck at GND              ;
++-------+-------+----------+---------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 70                          ;
+;     SCLR              ; 24                          ;
+;     plain             ; 46                          ;
+; arriav_lcell_comb     ; 151                         ;
+;     arith             ; 51                          ;
+;         1 data inputs ; 48                          ;
+;         2 data inputs ; 3                           ;
+;     normal            ; 100                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 6                           ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 59                          ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 5                           ;
+; boundary_port         ; 33                          ;
+;                       ;                             ;
+; Max LUT depth         ; 9.00                        ;
+; Average LUT depth     ; 3.66                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Sat Jan  4 11:38:42 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ping -c ping
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file countPing.v
+    Info (12023): Found entity 1: countPing File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file prescale.v
+    Info (12023): Found entity 1: prescale File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file bcdto7seg.v
+    Info (12023): Found entity 1: bcdto7seg File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file shiftadd.v
+    Info (12023): Found entity 1: shiftadd File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 3
+Warning (10463): Verilog HDL Declaration warning at echoCount.v(12): "dist" is SystemVerilog-2005 keyword File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 12
+Info (12021): Found 1 design units, including 1 entities, in source file echoCount.v
+    Info (12023): Found entity 1: echoCount File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file toplevel.v
+    Info (12023): Found entity 1: toplevel File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add3.v
+    Info (12023): Found entity 1: add3 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file prescalerEcho.v
+    Info (12023): Found entity 1: prescalerEcho File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v Line: 3
+Warning (10274): Verilog HDL macro warning at buzzer.v(7): overriding existing definition for macro "low", which was defined in "countPing.v", line 7 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file buzzer.v
+    Info (12023): Found entity 1: buzzer File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v Line: 3
+Info (12127): Elaborating entity "toplevel" for the top level hierarchy
+Info (12128): Elaborating entity "prescale" for hierarchy "prescale:myScale" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 26
+Info (12128): Elaborating entity "prescalerEcho" for hierarchy "prescalerEcho:mytickEcho" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 27
+Info (12128): Elaborating entity "countPing" for hierarchy "countPing:mtTrig" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 28
+Info (12128): Elaborating entity "echoCount" for hierarchy "echoCount:myEcho" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 29
+Info (12128): Elaborating entity "shiftadd" for hierarchy "shiftadd:myshift" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 30
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(18): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 18
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(19): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 19
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(20): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 20
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(21): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 21
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(22): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 22
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(23): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 23
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(25): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 25
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(26): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 26
+Warning (10230): Verilog HDL assignment warning at shiftadd.v(27): truncated value with size 5 to match size of target (4) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 27
+Info (12128): Elaborating entity "add3" for hierarchy "shiftadd:myshift|add3:m1" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v Line: 30
+Info (12128): Elaborating entity "bcdto7seg" for hierarchy "bcdto7seg:mybcdone" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 31
+Warning (10270): Verilog HDL Case Statement warning at bcdto7seg.v(14): incomplete case statement has no default case item File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (10240): Verilog HDL Always Construct warning at bcdto7seg.v(14): inferring latch(es) for variable "out", which holds its previous value in one or more paths through the always construct File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[0]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[1]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[2]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[3]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[4]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[5]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (10041): Inferred latch for "out[6]" at bcdto7seg.v(14) File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Info (12128): Elaborating entity "buzzer" for hierarchy "buzzer:mybuzz" File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 35
+Warning (14026): LATCH primitive "bcdto7seg:mybcdthausand|out[0]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdthausand|out[3]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdthausand|out[4]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdthausand|out[5]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (13012): Latch bcdto7seg:mybcdone|out[0] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdone|out[1] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdone|out[2] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdone|out[3] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdone|out[4] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdone|out[5] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdone|out[6] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[0] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[0] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[1] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[2] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[3] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[4] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[5] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdten|out[6] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal echoCount:myEcho|latch[1] File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v Line: 16
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[0] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[1] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[2] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[3] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[4] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[5] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (13012): Latch bcdto7seg:mybcdhundred|out[6] has unsafe behavior File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal shiftadd:myshift|add3:m9|WideOr0 File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v Line: 7
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[0]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[1]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[2]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[3]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[4]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[5]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (14026): LATCH primitive "bcdto7seg:mybcdhundred|out[6]" is permanently enabled File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v Line: 14
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "thausands[1]" is stuck at GND File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 14
+    Warning (13410): Pin "thausands[2]" is stuck at GND File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 14
+    Warning (13410): Pin "thausands[6]" is stuck at VCC File: /home/nursyeha/Documents/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 190 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 30 output pins
+    Info (21061): Implemented 157 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 71 warnings
+    Info: Peak virtual memory: 1001 megabytes
+    Info: Processing ended: Sat Jan  4 11:38:56 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:32
+
+

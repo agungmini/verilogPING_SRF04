@@ -1,0 +1,119 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do ping_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:09 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v 
+# -- Compiling module countPing
+# 
+# Top level modules:
+# 	countPing
+# End time: 16:16:10 on Aug 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:12 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v 
+# -- Compiling module prescale
+# 
+# Top level modules:
+# 	prescale
+# End time: 16:16:13 on Aug 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:13 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v 
+# -- Compiling module bcdto7seg
+# 
+# Top level modules:
+# 	bcdto7seg
+# End time: 16:16:14 on Aug 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:14 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v 
+# -- Compiling module shiftadd
+# 
+# Top level modules:
+# 	shiftadd
+# End time: 16:16:14 on Aug 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:14 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v 
+# -- Compiling module echoCount
+# 
+# Top level modules:
+# 	echoCount
+# End time: 16:16:14 on Aug 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:14 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v 
+# -- Compiling module toplevel
+# 
+# Top level modules:
+# 	toplevel
+# End time: 16:16:15 on Aug 13,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:15 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v 
+# -- Compiling module add3
+# 
+# Top level modules:
+# 	add3
+# End time: 16:16:15 on Aug 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:15 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v 
+# -- Compiling module prescalerEcho
+# 
+# Top level modules:
+# 	prescalerEcho
+# End time: 16:16:15 on Aug 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:16:16 on Aug 13,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04" E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v 
+# -- Compiling module buzzer
+# 
+# Top level modules:
+# 	buzzer
+# End time: 16:16:16 on Aug 13,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.add3 work.bcdto7seg work.buzzer work.countPing work.echoCount work.prescale work.prescalerEcho work.shiftadd work.toplevel
+# vsim work.add3 work.bcdto7seg work.buzzer work.countPing work.echoCount work.prescale work.prescalerEcho work.shiftadd work.toplevel 
+# Start time: 16:18:31 on Aug 13,2019
+# Loading work.add3
+# Loading work.bcdto7seg
+# Loading work.buzzer
+# Loading work.countPing
+# Loading work.echoCount
+# Loading work.prescale
+# Loading work.prescalerEcho
+# Loading work.shiftadd
+# Loading work.toplevel
+add wave -position insertpoint  \
+{sim:/add3/out[3]}
+# End time: 16:19:12 on Aug 13,2019, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 0

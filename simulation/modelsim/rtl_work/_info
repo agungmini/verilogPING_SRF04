@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/simulation/modelsim
+vadd3
+Z1 !s110 1565687775
+!i10b 1
+!s100 m2hHCQ0>9f43=ZTOL1VFS0
+I_5VN65]<Dgh0>N`QU3fl13
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557141513
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1565687775.000000
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work {+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04}
+Z7 tCvgOpt 0
+vbcdto7seg
+Z8 !s110 1565687773
+!i10b 1
+!s100 cGLF5mAMmNh9;SQ=n?9;;0
+I_28o;UKRLkY__4P404X?U1
+R2
+R0
+w1557903809
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1565687773.000000
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v|
+!i113 1
+R5
+R6
+R7
+vbuzzer
+!s110 1565687776
+!i10b 1
+!s100 V:i<4z07Hjn:m::mY3oVN3
+I3R_e5knIk>b@D5?74H=o53
+R2
+R0
+w1558336112
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1565687776.000000
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/buzzer.v|
+!i113 1
+R5
+R6
+R7
+vcountPing
+!s110 1565687770
+!i10b 1
+!s100 5Kc7^O=i]gfCT:ARk;CRg2
+IoCCM78TPnK]GeFYLHI:>a2
+R2
+R0
+w1559273185
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1565687769.000000
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v|
+!i113 1
+R5
+R6
+R7
+ncount@ping
+vechoCount
+Z9 !s110 1565687774
+!i10b 1
+!s100 b8IRelR:ln<44UMa7CWXE3
+IWDcNo_]1M9k5[IHNj`[WG0
+R2
+R0
+w1558336128
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z10 !s108 1565687774.000000
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v|
+!i113 1
+R5
+R6
+R7
+necho@count
+vprescale
+R8
+!i10b 1
+!s100 Paf?G9XSM`;DHAL`WFBeB1
+ICFnB^c93l<UkGc]Y1?ng>3
+R2
+R0
+w1557903785
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1565687772.000000
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v|
+!i113 1
+R5
+R6
+R7
+vprescalerEcho
+R1
+!i10b 1
+!s100 :UZn6cUREEUFF`cZCz62>3
+I__Qk9kMiiN92m7g6WH]Ld1
+R2
+R0
+w1557987167
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v|
+!i113 1
+R5
+R6
+R7
+nprescaler@echo
+vshiftadd
+R9
+!i10b 1
+!s100 z9CaYNAZRE?Yebg;`RDcb0
+IcIbKgbX]6E`D=?[[OUlbO1
+R2
+R0
+w1557903825
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v
+L0 3
+R3
+r1
+!s85 0
+31
+R10
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v|
+!i113 1
+R5
+R6
+R7
+vtoplevel
+R1
+!i10b 1
+!s100 30W@8ob[GZS@VG__SIUFG0
+IZ;8<[B`n9K2DTi86cg[]13
+R2
+R0
+w1558336142
+8E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v
+FE:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
+!s107 E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04|E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v|
+!i113 1
+R5
+R6
+R7

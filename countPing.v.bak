@@ -1,0 +1,3 @@
+module countPing(en,clkin,pulse);
+
+endmodule

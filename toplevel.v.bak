@@ -1,0 +1,14 @@
+module toplevel(clk,trig,echoin,ones,tens,hundreds,thausands);
+
+parameter bit7= 7;
+
+input clk;
+input trig;
+input echoin;
+output [bit7-1:0] ones;
+output [bit7-1:0] tens;
+output [bit7-1:0] hundreds;
+output [bit7-1:0] thausands;
+
+
+endmodule

@@ -1,0 +1,389 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'echoCount:myEcho|latch[0]'
+Slack : -17.560
+TNS   : -121.885
+
+Type  : Slow 1100mV 85C Model Setup 'echoCount:myEcho|latch[1]'
+Slack : -17.423
+TNS   : -238.058
+
+Type  : Slow 1100mV 85C Model Setup 'echoin'
+Slack : -7.001
+TNS   : -13.999
+
+Type  : Slow 1100mV 85C Model Setup 'prescalerEcho:mytickEcho|count[7]'
+Slack : -4.789
+TNS   : -47.865
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -4.017
+TNS   : -20.313
+
+Type  : Slow 1100mV 85C Model Setup 'prescale:myScale|count[8]'
+Slack : -2.522
+TNS   : -42.677
+
+Type  : Slow 1100mV 85C Model Setup 'buzzer:mybuzz|count[13]'
+Slack : -1.272
+TNS   : -1.949
+
+Type  : Slow 1100mV 85C Model Setup 'buzzer:mybuzz|count1[1]'
+Slack : -0.995
+TNS   : -2.792
+
+Type  : Slow 1100mV 85C Model Hold 'echoin'
+Slack : -7.916
+TNS   : -84.273
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -1.830
+TNS   : -2.769
+
+Type  : Slow 1100mV 85C Model Hold 'echoCount:myEcho|latch[1]'
+Slack : -0.044
+TNS   : -0.044
+
+Type  : Slow 1100mV 85C Model Hold 'buzzer:mybuzz|count[13]'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'prescale:myScale|count[8]'
+Slack : 0.295
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'buzzer:mybuzz|count1[1]'
+Slack : 0.394
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'echoCount:myEcho|latch[0]'
+Slack : 0.515
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'prescalerEcho:mytickEcho|count[7]'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.718
+TNS   : -12.297
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'prescale:myScale|count[8]'
+Slack : -0.394
+TNS   : -15.727
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'echoin'
+Slack : -0.394
+TNS   : -8.293
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'prescalerEcho:mytickEcho|count[7]'
+Slack : -0.394
+TNS   : -5.080
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'buzzer:mybuzz|count1[1]'
+Slack : -0.394
+TNS   : -2.051
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'buzzer:mybuzz|count[13]'
+Slack : -0.394
+TNS   : -1.042
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'echoCount:myEcho|latch[1]'
+Slack : -0.038
+TNS   : -0.170
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'echoCount:myEcho|latch[0]'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'echoCount:myEcho|latch[0]'
+Slack : -17.239
+TNS   : -119.744
+
+Type  : Slow 1100mV 0C Model Setup 'echoCount:myEcho|latch[1]'
+Slack : -17.139
+TNS   : -234.506
+
+Type  : Slow 1100mV 0C Model Setup 'echoin'
+Slack : -6.432
+TNS   : -12.860
+
+Type  : Slow 1100mV 0C Model Setup 'prescalerEcho:mytickEcho|count[7]'
+Slack : -4.748
+TNS   : -47.455
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -4.143
+TNS   : -21.423
+
+Type  : Slow 1100mV 0C Model Setup 'prescale:myScale|count[8]'
+Slack : -2.529
+TNS   : -44.555
+
+Type  : Slow 1100mV 0C Model Setup 'buzzer:mybuzz|count[13]'
+Slack : -1.363
+TNS   : -2.030
+
+Type  : Slow 1100mV 0C Model Setup 'buzzer:mybuzz|count1[1]'
+Slack : -0.970
+TNS   : -2.688
+
+Type  : Slow 1100mV 0C Model Hold 'echoin'
+Slack : -7.792
+TNS   : -83.651
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -1.804
+TNS   : -2.746
+
+Type  : Slow 1100mV 0C Model Hold 'echoCount:myEcho|latch[1]'
+Slack : -0.212
+TNS   : -0.233
+
+Type  : Slow 1100mV 0C Model Hold 'buzzer:mybuzz|count[13]'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'prescale:myScale|count[8]'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'echoCount:myEcho|latch[0]'
+Slack : 0.331
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'buzzer:mybuzz|count1[1]'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'prescalerEcho:mytickEcho|count[7]'
+Slack : 0.507
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.747
+TNS   : -11.580
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'prescale:myScale|count[8]'
+Slack : -0.394
+TNS   : -15.476
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'echoin'
+Slack : -0.394
+TNS   : -8.706
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'prescalerEcho:mytickEcho|count[7]'
+Slack : -0.394
+TNS   : -5.130
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'buzzer:mybuzz|count1[1]'
+Slack : -0.394
+TNS   : -2.059
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'buzzer:mybuzz|count[13]'
+Slack : -0.394
+TNS   : -1.031
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'echoCount:myEcho|latch[1]'
+Slack : -0.039
+TNS   : -0.223
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'echoCount:myEcho|latch[0]'
+Slack : 0.329
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'echoCount:myEcho|latch[0]'
+Slack : -10.113
+TNS   : -70.303
+
+Type  : Fast 1100mV 85C Model Setup 'echoCount:myEcho|latch[1]'
+Slack : -10.021
+TNS   : -137.173
+
+Type  : Fast 1100mV 85C Model Setup 'echoin'
+Slack : -5.013
+TNS   : -10.025
+
+Type  : Fast 1100mV 85C Model Setup 'prescalerEcho:mytickEcho|count[7]'
+Slack : -3.002
+TNS   : -30.010
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.335
+TNS   : -6.390
+
+Type  : Fast 1100mV 85C Model Setup 'prescale:myScale|count[8]'
+Slack : -1.694
+TNS   : -16.075
+
+Type  : Fast 1100mV 85C Model Setup 'buzzer:mybuzz|count[13]'
+Slack : -0.697
+TNS   : -0.839
+
+Type  : Fast 1100mV 85C Model Setup 'buzzer:mybuzz|count1[1]'
+Slack : -0.305
+TNS   : -0.619
+
+Type  : Fast 1100mV 85C Model Hold 'echoin'
+Slack : -4.736
+TNS   : -48.908
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : -0.981
+TNS   : -1.428
+
+Type  : Fast 1100mV 85C Model Hold 'buzzer:mybuzz|count[13]'
+Slack : -0.180
+TNS   : -0.180
+
+Type  : Fast 1100mV 85C Model Hold 'prescale:myScale|count[8]'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'echoCount:myEcho|latch[1]'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'buzzer:mybuzz|count1[1]'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'prescalerEcho:mytickEcho|count[7]'
+Slack : 0.235
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'echoCount:myEcho|latch[0]'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.802
+TNS   : -9.510
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'echoin'
+Slack : -0.570
+TNS   : -10.606
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'prescale:myScale|count[8]'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'buzzer:mybuzz|count1[1]'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'buzzer:mybuzz|count[13]'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'prescalerEcho:mytickEcho|count[7]'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'echoCount:myEcho|latch[1]'
+Slack : 0.177
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'echoCount:myEcho|latch[0]'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'echoCount:myEcho|latch[0]'
+Slack : -9.601
+TNS   : -66.718
+
+Type  : Fast 1100mV 0C Model Setup 'echoCount:myEcho|latch[1]'
+Slack : -9.513
+TNS   : -130.348
+
+Type  : Fast 1100mV 0C Model Setup 'echoin'
+Slack : -3.806
+TNS   : -7.611
+
+Type  : Fast 1100mV 0C Model Setup 'prescalerEcho:mytickEcho|count[7]'
+Slack : -3.016
+TNS   : -30.150
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.140
+TNS   : -5.421
+
+Type  : Fast 1100mV 0C Model Setup 'prescale:myScale|count[8]'
+Slack : -1.508
+TNS   : -14.605
+
+Type  : Fast 1100mV 0C Model Setup 'buzzer:mybuzz|count[13]'
+Slack : -0.662
+TNS   : -0.766
+
+Type  : Fast 1100mV 0C Model Setup 'buzzer:mybuzz|count1[1]'
+Slack : -0.248
+TNS   : -0.495
+
+Type  : Fast 1100mV 0C Model Hold 'echoin'
+Slack : -4.791
+TNS   : -49.946
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : -0.993
+TNS   : -1.509
+
+Type  : Fast 1100mV 0C Model Hold 'buzzer:mybuzz|count[13]'
+Slack : -0.174
+TNS   : -0.174
+
+Type  : Fast 1100mV 0C Model Hold 'echoCount:myEcho|latch[1]'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'prescale:myScale|count[8]'
+Slack : 0.087
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'buzzer:mybuzz|count1[1]'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'prescalerEcho:mytickEcho|count[7]'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'echoCount:myEcho|latch[0]'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.825
+TNS   : -11.059
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'echoin'
+Slack : -0.599
+TNS   : -11.373
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'prescale:myScale|count[8]'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'buzzer:mybuzz|count1[1]'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'prescalerEcho:mytickEcho|count[7]'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'buzzer:mybuzz|count[13]'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'echoCount:myEcho|latch[1]'
+Slack : 0.217
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'echoCount:myEcho|latch[0]'
+Slack : 0.461
+TNS   : 0.000
+
+------------------------------------------------------------

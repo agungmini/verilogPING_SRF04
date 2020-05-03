@@ -1,0 +1,7 @@
+module buzzer(en,clk,buzz);
+
+input en;
+input clk;
+output buzz;
+
+endmodule

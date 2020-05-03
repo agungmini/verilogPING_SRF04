@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/countPing.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescale.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/bcdto7seg.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/shiftadd.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/echoCount.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/toplevel.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/add3.v}
+vlog -vlog01compat -work work +incdir+E:/urusan_sekolah/sekolah\ pasca2/sistem\ rangkaian\ elektronika/srf04 {E:/urusan_sekolah/sekolah pasca2/sistem rangkaian elektronika/srf04/prescalerEcho.v}
+

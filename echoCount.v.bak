@@ -1,0 +1,12 @@
+//ini untuk menghitung echo yang diterima
+
+module echoCount(echoin,clk,dist);
+
+parameter bitSize= 10;
+
+input clk;
+input echoin;
+output [bitSize-1:0] dist;
+
+
+endmodule

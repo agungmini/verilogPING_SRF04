@@ -1,0 +1,10 @@
+module prescale(clkin,clkout);
+
+parameter bitScale= 9;
+input clkin;
+output clkout;
+reg [bitScale-1:0] count= 0;
+
+assign clkout= count[bitScale-1];
+
+endmodule

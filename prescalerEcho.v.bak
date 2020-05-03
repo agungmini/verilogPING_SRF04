@@ -1,0 +1,4 @@
+module prescalerEcho(clkin,clkout);
+
+input clkin;
+output clkout; 
